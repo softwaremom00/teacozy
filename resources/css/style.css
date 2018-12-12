@@ -34,7 +34,7 @@ header {
   font-size: 22px;
   font-weight: bold;
   margin-left: 0px;
-  /*position: fixed;  always stay in same place */
+  position: fixed;
   z-index: 2;
 
 }
@@ -55,16 +55,20 @@ div {
 }
 
 .main_container{
+  position: static;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items:center;
   width: 1300px;
-  margin-top: 20px;
+  margin-top: auto;
   margin-right: auto;
   margin-bottom: 20px;
   margin-left: auto; /*causes it to render in middle*/
   padding-top: 0px;
   background-color: black;
+
 }
 
 .image_content{
@@ -72,7 +76,7 @@ div {
   background-color: black;
   height: 700px;
   width: 1200px;
-  margin-top: 0;
+  margin-top: 69px;
   font-size: 40px;
   text-align: center;
   justify-content: center;
@@ -92,4 +96,32 @@ div {
 .image_content h4{
   background-color: black;
   margin-top: 0px;
+}
+
+.teaofmonth{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1000px;
+}
+
+.teaofmonth_title{
+  text-align: center;
+}
+
+.teaofmonth_topphotos{
+  display: flex;
+  flex-direction: row;
+}
+#tea_menu_item{
+  display: flex;
+  flex-direction: column;
+}
+.teaofmonth_topphotos img{
+  width: 300px;
+  height: 200px;
+}
+.teaofmonth_bottomphotos img{
+  width: 300px;
+  height: 200px;
 }
