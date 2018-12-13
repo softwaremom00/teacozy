@@ -2,7 +2,7 @@
 html {
   font-family: Helvetica;
   font-size: 22px;
-  color: seashell;
+  color: seashell; /*seashell is correct */
   opacity: .9;
   background-color: black;
 }
@@ -13,7 +13,8 @@ nav span{
 }
 
 nav a{
-  color: white;
+  color: seashell;
+  opacity: .9;
 }
 header nav{
   padding-right:20px
@@ -23,17 +24,20 @@ header nav{
 /* header */
 
 header {
+  padding-top: 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   height: 69px;
-  border: 1px solid red;
+
   background-color: black;
   font-family: helvetica;
   font-size: 22px;
   font-weight: bold;
   margin-left: 0px;
+  margin-top: 0px;
+  top: 0;
   position: fixed;
   z-index: 2;
 
@@ -48,15 +52,13 @@ header {
 .logo img{
   height: 50px;
   margin-left: 10px;
+  margin-top: 0px;
 }
 
-div {
-  border: 1px solid red;
-}
+
 
 .main_container{
   position: static;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,7 +76,6 @@ div {
 .image_content{
   display: flex;
   flex-direction: column;
-
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
   background-color: black;
   height: 700px;
@@ -83,7 +84,7 @@ div {
   font-size: 40px;
   text-align: center;
   justify-content: center;
-  border: 1px solid blue;
+
 }
 .mission_statement{
 
@@ -140,7 +141,7 @@ div {
   flex-direction: row;
   width: 1000px;
   justify-content: space-between;
-  border: 1px solid blue;
+
 }
 
 .teaofmonth_menu_lower{
@@ -167,12 +168,41 @@ div {
 }
 
 .locations{
+  margin-top: 50px;
   height: 500px;
   width: 1200px;
   background-image: url("../images/img-locations-background.jpg");
   background-position: center;
-  /*
-    background-size: cover;
-  background-repeat: no-repeat; not sure if you need these*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
+}
+
+.location_row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.location_listing{
+  background-color: black;
+  width: 300px;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
+
+}
+
+footer .bottom_heading{
+  height: 200px;
+  text-align: center;
+}
+
+footer #copyright{
+  margin-left: 20px;
+  text-align: left;
 }
