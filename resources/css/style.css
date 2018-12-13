@@ -72,6 +72,9 @@ div {
 }
 
 .image_content{
+  display: flex;
+  flex-direction: column;
+
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
   background-color: black;
   height: 700px;
@@ -80,8 +83,6 @@ div {
   font-size: 40px;
   text-align: center;
   justify-content: center;
-  display: flex;
-  flex-direction: column;
   border: 1px solid blue;
 }
 .mission_statement{
@@ -112,16 +113,66 @@ div {
 .teaofmonth_topphotos{
   display: flex;
   flex-direction: row;
+  width: 1000px;
+  justify-content: space-between;
 }
+/*
+.teaofmonth_menu{
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  justify-content: space-between;
+}
+
+.teaofmonth_menu #upper {
+  width: 1000px;
+}
+
+.teaofmonth_menu #lower{
+  width: 650px;
+}
+
+
+
+*/
+.teaofmonth_menu_upper{
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  justify-content: space-between;
+  border: 1px solid blue;
+}
+
+.teaofmonth_menu_lower{
+  display: flex;
+  flex-direction: row;
+  width: 650px;
+  justify-content: space-between;
+}
+
 #tea_menu_item{
   display: flex;
   flex-direction: column;
+
 }
-.teaofmonth_topphotos img{
+
+
+#tea_menu_item h4{
+  text-align: center;
+}
+
+.teaofmonth img{
   width: 300px;
   height: 200px;
 }
-.teaofmonth_bottomphotos img{
-  width: 300px;
-  height: 200px;
+
+.locations{
+  height: 500px;
+  width: 1200px;
+  background-image: url("../images/img-locations-background.jpg");
+  background-position: center;
+  /*
+    background-size: cover;
+  background-repeat: no-repeat; not sure if you need these*/
+
 }
