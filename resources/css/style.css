@@ -29,15 +29,17 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 69px;
-
+  height: 69px;  /* from Redline spec */
+  border-bottom: 1px solid seashell;   /* from Redline spec */
   background-color: black;
   font-family: helvetica;
   font-size: 22px;
   font-weight: bold;
   margin-left: 0px;
   margin-top: 0px;
+  padding-left: 0px;
   top: 0;
+  left: 0;
   position: fixed;
   z-index: 2;
 
@@ -46,13 +48,14 @@ header {
 .logo{
   display: flex;
   align-items: center;
-
+  margin-left: 0px;
 }
 
 .logo img{
-  height: 50px;
-  margin-left: 10px;
+  height: 50px;  /* from Redline spec */
+  margin-left: 10px;  /*from Redline spec */
   margin-top: 0px;
+
 }
 
 
@@ -78,26 +81,33 @@ header {
   flex-direction: column;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
   background-color: black;
-  height: 700px;
-  width: 1200px;
+  height: 700px; /* from Redline Spec */
+  width: 1200px; /* from Redline Spec */
   margin-top: 69px;
-  font-size: 40px;
+  /*font-size: 40px;  ISSUE: where does this come from */
   text-align: center;
   justify-content: center;
-
+  align-items: center;
 }
 .mission_statement{
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
 
 }
 
-.image_content h2{
+.mission_statement h2{
   background-color: black;
-  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: auto;
 }
 
-.image_content h4{
+.mission_statement h4{
   background-color: black;
-  margin-top: 0px;
+  margin-top: auto;
+  padding-top:10px;
+  padding-bottom: 10px;
 }
 
 .teaofmonth{
