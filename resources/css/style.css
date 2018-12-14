@@ -2,7 +2,7 @@
 html {
   font-family: Helvetica;
   font-size: 22px;
-  color: seashell; 
+  color: seashell;
   opacity: .9;
   background-color: black;
 }
@@ -173,7 +173,7 @@ header {
   margin-bottom: 15px; /* from Redline */
 }
 
-.locations h3, h4{
+.locations h3, p{
   opacity: 1;
 }
 
