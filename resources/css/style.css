@@ -2,7 +2,7 @@
 html {
   font-family: Helvetica;
   font-size: 22px;
-  color: seashell; /*seashell is correct */
+  color: seashell; 
   opacity: .9;
   background-color: black;
 }
@@ -15,6 +15,7 @@ nav span{
 nav a{
   color: seashell;
   opacity: .9;
+  text-decoration: underline;  /* from Redline spec */
 }
 header nav{
   padding-right:20px
@@ -40,7 +41,7 @@ header {
   padding-left: 0px;
   top: 0;
   left: 0;
-  position: fixed;
+  position: fixed;  /*from Redline spec */
   z-index: 2;
 
 }
@@ -84,16 +85,15 @@ header {
   height: 700px; /* from Redline Spec */
   width: 1200px; /* from Redline Spec */
   margin-top: 69px;
-  /*font-size: 40px;  ISSUE: where does this come from */
   text-align: center;
-  justify-content: center;
+  justify-content: center;   /* from Redline Spec controls alignment vertically when flex-direction is column */
   align-items: center;
 }
 .mission_statement{
   display: flex;
   flex-direction: column;
   width: 1200px;
-
+  justify-content: center;  /* from Redline Spec cntrls alignment vertically */
 }
 
 .mission_statement h2{
@@ -114,42 +114,18 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1000px;
+  justify-content: center;
+  width: 1000px;  /* from Redline Spec */
 }
 
 .teaofmonth_title{
   text-align: center;
 }
 
-.teaofmonth_topphotos{
-  display: flex;
-  flex-direction: row;
-  width: 1000px;
-  justify-content: space-between;
-}
-/*
-.teaofmonth_menu{
-  display: flex;
-  flex-direction: row;
-  width: 1000px;
-  justify-content: space-between;
-}
-
-.teaofmonth_menu #upper {
-  width: 1000px;
-}
-
-.teaofmonth_menu #lower{
-  width: 650px;
-}
-
-
-
-*/
 .teaofmonth_menu_upper{
   display: flex;
   flex-direction: row;
-  width: 1000px;
+  width: 1000px;                /* from Redline Spec */
   justify-content: space-between;
 
 }
@@ -157,7 +133,7 @@ header {
 .teaofmonth_menu_lower{
   display: flex;
   flex-direction: row;
-  width: 650px;
+  width: 650px;              /* from Redline - 1000px width - 300 for photo - 50 margin is 650 */
   justify-content: space-between;
 }
 
@@ -169,31 +145,32 @@ header {
 
 
 #tea_menu_item h4{
+  margin-top: 10px;  /* from Redline Spec*/
+  padding-top: 0px;
   text-align: center;
 }
 
 .teaofmonth img{
-  width: 300px;
-  height: 200px;
+  width: 300px;    /* from Redline spec */
+  height: 200px;   /* from Redline spec */
 }
 
 .locations{
-  margin-top: 40px;
-  height: 500px;
-  width: 1200px;
-  background-image: url("../images/img-locations-background.jpg");
-  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-size: cover;
+  align-items: center;
+  margin-top: 20px;
+  height: 500px;          /* from Redline Spec */
+  width: 1200px;         /* from Redline spec */
+  background-image: url("../images/img-locations-background.jpg");
+  background-position: center;
   background-repeat: no-repeat;
-
 }
 
 .locations h2{
   text-align: center;
-
+  margin-bottom: 15px; /* from Redline */
 }
 
 .locations h3, h4{
@@ -204,24 +181,24 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
+  align-items: center;
 }
 
 .location_listing{
   background-color: black;
-  width: 300px;
-  margin-right: 20px;
-  margin-left: 20px;
+  width: 300px;         /* from Redline */
+  margin-right: 20px;   /*from Redline  40px between boxes */
+  margin-left: 20px;   /* from Redline 40px between boxes */
   text-align: center;
-
+  margin-bottom: 70px;
 }
 
 footer .bottom_heading{
-  height: 200px;
+  height: 200px;    /* from Redline */
   text-align: center;
 }
 
 footer #copyright{
-  margin-left: 20px;
-  text-align: left;
+  margin-left: 20px;  /* from Redline */
+  text-align: left; /* from Redline */
 }
